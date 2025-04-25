@@ -19,6 +19,16 @@ void main() {
     expect(duba.nota, 9.2);
   });
 
+  // Função group:
+
+  group("Grupo de testes semelhantes", (){
+    // Teste 1
+
+    // Teste 2
+
+    // Teste 3
+  });
+
 
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
