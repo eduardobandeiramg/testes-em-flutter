@@ -53,4 +53,4 @@ São ações que podem ser realizadas pelo WidgetTester. Simula um usuário.
 * `tester.tap()` -> aperta um botão
 
 ## Métodos de teste:
-* `expect("descricao", valor_esperado);` -> define o teste, com o componente a ser testado e o valor esperado
+* `expect(valor_testado, valor_esperado);` -> define o teste, com o componente a ser testado e o valor esperado
