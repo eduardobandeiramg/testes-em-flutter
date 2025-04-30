@@ -36,13 +36,13 @@ testWidgets("descrição", (WidgetTester tester) async {
     * Observação: Testes de widget devem ser assíncronos pois construir widgets e telas levam algum tempo.
 
 ## Finders
-São funções específicas que PROCURAM um determinado widget na tela e retornam o resultado encontrado.
-* `find.text(texto, matcher);` -> procura um determinado texto e verifica se encontra um widget, nenhum, mais de um ou um número definido, de acordo com o matcher.
+São funções específicas que PROCURAM um determinado widget na tela e retornam o resultado encontrado. Em funções como "expect" podem ser também valores fixos.
+* `find.text(texto, matcher);` -> procura um determinado texto e retorna o(s) widget(s) com esse texto.
 * `find.byType(classeDoWidget, matcher);`
 * `find.byWidgetPredicate(funcaoQueDefineRetornoVerdadeiroOuFalso, mathcer);`
 
 ## Matchers
-São funções específicas que DETERMINAM O RESULTADO ESPERADO. 
+São funções específicas que DETERMINAM O RESULTADO ESPERADO. Em funções como "expect" podem ser também valores fixos.
 * findsOneWidget
 * findsNothing
 * findsNWidgets(N)
@@ -53,4 +53,4 @@ São ações que podem ser realizadas pelo WidgetTester. Simula um usuário.
 * `tester.tap()` -> aperta um botão
 
 ## Métodos de teste:
-* `expect(valor_testado, valor_esperado);` -> define o teste, com o componente a ser testado e o valor esperado
+* `expect(valor_testado(finder), valor_esperado(matcher));` -> define o teste, com o componente a ser testado e o valor esperado
