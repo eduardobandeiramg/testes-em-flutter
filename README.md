@@ -54,3 +54,7 @@ São ações que podem ser realizadas pelo WidgetTester. Simula um usuário.
 
 ## Métodos de teste:
 * `expect(valor_testado(finder), valor_esperado(matcher));` -> define o teste, com o componente a ser testado e o valor esperado
+
+## Rodando os testes:
+1. Clicar no botão de play ao lado de cada teste OU ao lado da função top-level com todos os testes OU na main do arquivo.
+2. Clicar no seletor de arquivos para rodar na parte de cima do Android Studio, escolher o arquivo de teste e clicar em run.
