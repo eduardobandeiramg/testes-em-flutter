@@ -48,9 +48,10 @@ São funções específicas que DETERMINAM O RESULTADO ESPERADO. Em funções co
 * findsNWidgets(N)
 
 ## Ações
-São ações que podem ser realizadas pelo WidgetTester. Simula um usuário.
+São ações que podem ser realizadas pelo WidgetTester. Simula um usuário
 * `tester.pumpWidget();` -> inicializa a tela
 * `tester.tap()` -> aperta um botão
+* `tester.enterText(widget, texto)` -> Preenche um widget com um texto
 
 ## Métodos de teste:
 * `expect(valor_testado(finder), valor_esperado(matcher));` -> define o teste, com o componente a ser testado e o valor esperado
